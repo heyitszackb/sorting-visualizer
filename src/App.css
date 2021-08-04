@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.bars {
+    min-height: 100px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 25px;
+    padding: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px 0px #ddd;
+}
