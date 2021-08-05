@@ -38,3 +38,8 @@ body {
 .controls {
     display: flex
 }
+
+.cellCol {
+    margin-left: 2px;
+    margin-right: 2px;
+}
