@@ -91,3 +91,17 @@ body {
     margin-left: 2px;
     margin-right: 2px;
 }
+
+.playbackButtons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mainPlaybackButtons {
+    position: absolute;
+}
+
+.replayButton {
+    margin-right: auto;
+}

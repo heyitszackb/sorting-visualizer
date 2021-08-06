@@ -249,6 +249,7 @@ class App extends React.Component {
             <div className="item">
                <div className="card">
                   <div className="playback">
+                        <div>{this.state.algorithm}</div>
                         <Slider 
                            color="secondary"
                            value={this.state.currentStep}
@@ -256,19 +257,24 @@ class App extends React.Component {
                            max={this.state.arraySteps.length - 1} 
                            onChange={this.adjustStep}
                         />
-                        <IconButton onClick={this.generateBars}>
-                           <RotateLeftRounded />
-                        </IconButton>
+                        <div className="playbackButtons">
+                           <div className="replayButton">
+                              <IconButton onClick={this.generateBars}>
+                                 <RotateLeftRounded />
+                              </IconButton>
+                           </div>
+                           <div className="mainPlaybackButtons">
+                              <IconButton onClick={this.stepBack}>
+                                 <SkipPreviousRounded />
+                              </IconButton>
 
-                        <IconButton onClick={this.stepBack}>
-                           <SkipPreviousRounded />
-                        </IconButton>
+                              {playButton}
 
-                        {playButton}
-
-                        <IconButton onClick={this.stepForward}>
-                           <SkipNextRounded/>
-                        </IconButton>
+                              <IconButton onClick={this.stepForward}>
+                                 <SkipNextRounded/>
+                              </IconButton>
+                           </div>
+                        </div>
                      </div>
                </div>
             
