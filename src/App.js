@@ -238,18 +238,28 @@ class App extends React.Component {
          )
       }
 
+      let links = {
+         'Bubble Sort': 'https://en.wikipedia.org/wiki/Bubble_sort',
+         'Merge Sort': 'https://en.wikipedia.org/wiki/Merge_sort',
+         'Quick Sort': 'https://en.wikipedia.org/wiki/Quicksort',
+      }
+
       return(
          <div className="App">
             <h1>Sorting Visualizer</h1>
             <div className="item">
-               <div className="bars card">
-                  {barsDiv}
+               
+               <div className="card">
+                  <h3 className="algorithmName">{this.state.algorithm}</h3>
+                  <p className="learnMore"><a href={links[this.state.algorithm]}>learn more</a></p>
+                  <div className="bars">
+                     {barsDiv}
+                  </div>
                </div>
             </div>
             <div className="item">
                <div className="card">
                   <div className="playback">
-                        <div>{this.state.algorithm}</div>
                         <Slider 
                            color="secondary"
                            value={this.state.currentStep}

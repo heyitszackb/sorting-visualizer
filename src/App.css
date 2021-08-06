@@ -61,6 +61,7 @@ body {
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 15px;
+    line-height: 5px;
 }
 /* .container {
     display: flex;
@@ -104,4 +105,28 @@ body {
 
 .replayButton {
     margin-right: auto;
+}
+
+.learnMore {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}  
+
+a:link {
+    color: #f50257;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f50257;
+}
+
+a:hover {
+    color: #b60040;
+}
+
+.algorithmName {
+    padding-top: 25px;
+    margin: 0px;
 }
