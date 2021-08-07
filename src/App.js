@@ -12,6 +12,7 @@ import './App.css';
 //Components
 import Bar from './Components/Bar'
 import Form from './Components/Form'
+import Backbutton from './Components/Backbutton'
 
 //Algorithms
 import bubbleSort from './Algorithms/BubbleSort'
@@ -33,8 +34,8 @@ class App extends React.Component {
          colorSteps: [],
          currentStep: 0,
          timeouts: [],
-         algorithm: 'Merge Sort',
-         barCount: 25,
+         algorithm: 'Bubble Sort',
+         barCount: 50,
          delay: 50,
          screenWidth: window.innerWidth,
          screenHeight: window.innerHeight,
@@ -316,6 +317,11 @@ class App extends React.Component {
                      windowWidth={1000}
                   />
                </div>
+            </div>
+            <Backbutton text="Back to zackbrandon.com"/>
+            <div className="footer">
+               <p className="copyright">© Zack Brandon - All rights reserved</p>
+               <p className="copyright">Thanks to <a href="https://bennettoh.com/" target="_blank">@BennettOh</a> for inspiration on this project</p>
             </div>
          </div>
       )

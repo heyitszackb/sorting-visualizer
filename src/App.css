@@ -130,3 +130,8 @@ a:hover {
     padding-top: 25px;
     margin: 0px;
 }
+
+.copyright {
+    color: rgba(128, 128, 128, 0.557);
+    font-size: 0.6rem;
+}

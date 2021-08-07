@@ -1,3 +1,3 @@
-# Todo order
+# Todo
 
-- Go through and stub functions
+- Refactor components

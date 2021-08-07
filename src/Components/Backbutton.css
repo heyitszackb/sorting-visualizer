@@ -1,0 +1,32 @@
+.backbuttonWrapper {
+    color: rgba(128, 128, 128, 0.591);
+    border: 1px solid rgba(128, 128, 128, 0.591);
+    border-radius: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px; 
+}
+
+.backbutton {
+    color: rgba(128, 128, 128, 0.591) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 800px) {
+    .backbuttonWrapper {
+        position: static;
+    }
+}
+
+.backbuttonWrapper:hover {
+    background-color: rgba(128, 128, 128, 0.132)
+}
+
+.arrow {
+    margin-right: 10px;
+}
